@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:phone_text_field_plus/phone_text_field.dart';
+import 'package:phone_text_field_plus/phone_text_field_plus.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,6 +42,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  TextEditingController textController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 const Text(
                   "Basic Widget",
-                  textScaleFactor: 1.5,
+                  textScaler: TextScaler.linear(1.5),
                 ),
                 PhoneTextField(
                   initialValue: '+2001090718223',
@@ -76,12 +77,13 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 const Text(
                   "Decoration Widget",
-                  textScaleFactor: 1.5,
+                  textScaler: TextScaler.linear(1.5),
                 ),
                 const SizedBox(
                   height: 20,
                 ),
                 PhoneTextField(
+                  controller: textController,
                   locale: const Locale('en'),
                   decoration: const InputDecoration(
                     filled: true,
@@ -115,6 +117,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     debugPrint(phone.completeNumber);
                   },
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 15, vertical: 9)),
+                    onPressed: () {
+                      textController.clear();
+                    },
+                    child: const Text(
+                      "Submit",
+                      style: TextStyle(fontSize: 15),
+                    ))
               ],
             ),
 

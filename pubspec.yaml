@@ -1,7 +1,7 @@
 name: phone_text_field_plus
 description: Phone TextField Plus is a Flutter plugin that lets you parse, validate, format, and manage other utilities for international numbers with localization support.
 version: 0.0.1
-homepage: https://github.com/MohamedAbd0/phone_text_field_plus
+homepage: https://github.com/bousalem98/phone_text_field_plus
 
 environment:
   sdk: ">=2.18.6 <3.0.0"

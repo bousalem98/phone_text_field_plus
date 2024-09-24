@@ -6,7 +6,7 @@ Phone TextField Plus is a Flutter plugin that lets you parse, validate, format, 
 
 ## Demo gif
 
-![image](https://github.com/MohamedAbd0/phone_text_field_plus/blob/main/screenshots/demo.gif)
+![image](https://github.com/bousalem98/phone_text_field_plus/blob/main/screenshots/demo.gif)
 
 ## Installation
 
@@ -26,7 +26,7 @@ $ pub get
 1. Import the `phone_text_field_plus.dart` file in your app
 
 ```dart
-import 'package:phone_text_field_plus/phone_text_field.dart';
+import 'package:phone_text_field_plus/phone_text_field_plus.dart';
 ```
 
 ## Features
@@ -34,6 +34,7 @@ import 'package:phone_text_field_plus/phone_text_field.dart';
 - Validate phone number
 - Select country code
 - Support arabic & english & french
+- add textController
 
 ## Usage
 
@@ -137,3 +138,13 @@ local(ar)
 ![](screenshots/4.png)
 
 ## Contributions
+
+## Main Contributors
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/bousalem98"><img src="https://avatars.githubusercontent.com/u/61710794?v=4" width="100px;" alt=""/><br /><sub><b>Mohamed Salem</b></sub></a></td>
+    <td align="center"><a href="https://github.com/MohamedAbd0"><img src="https://avatars.githubusercontent.com/u/32939129?v=4" width="100px;" alt=""/><br /><sub><b>Mohamed Abdo Elnashar</b></sub></a></td>
+  </tr>
+</table>
+<br/>

@@ -8,7 +8,7 @@ import 'package:phone_text_field_plus/helper/extensions/string.dart';
 
 import 'dialog/country_picker_dialog.dart';
 import 'helper/countries.dart';
-import 'phone_text_field.dart';
+import 'phone_text_field_plus.dart';
 export 'model/country_code_view_options.dart' show CountryViewOptions;
 export 'model/phone_number.dart' show PhoneNumber;
 
